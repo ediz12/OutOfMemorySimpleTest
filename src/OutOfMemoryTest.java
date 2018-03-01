@@ -16,10 +16,10 @@ public class OutOfMemoryTest {
         int size = 70*1024*1024;
 
         ArraySizeTest test1 = new ArraySizeTest(size);
-        //test1.build(); // Array size exceeds heap size, causing OutOfMemoryError
+        test1.build(); // Array size exceeds heap size, causing OutOfMemoryError
 
         ArrayListForLoopTest test2 = new ArrayListForLoopTest(size);
-        //test2.build();
+        test2.build();
 
         HashMapTest test3 = new HashMapTest();
         test3.build();
