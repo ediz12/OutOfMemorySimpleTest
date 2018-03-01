@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ArrayListForLoopTest {
     // Test to cause OutOfMemory due to memory leak from for loop
-    ArrayList<Integer> ints = new ArrayList<Integer>();
+    ArrayList<String> strs = new ArrayList<String>();
     private int loopTime;
 
     public ArrayListForLoopTest(){
@@ -15,7 +15,7 @@ public class ArrayListForLoopTest {
 
     public void build(){
         for(int i = 0; i < loopTime; i++){
-            ints.add(i);
+            strs.add("crashcrashcrashcrashcrashcrashcrashcrashcrash");
         }
     }
 }
